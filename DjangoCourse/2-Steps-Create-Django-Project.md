@@ -36,3 +36,18 @@ mysite/
 cd mysite
 python manage.py runserver
 ```
+Theo mặc định, server sẽ được chạy tại địa chỉ http://127.0.0.1:8000
+
+Để thay đổi địa chỉ ip và cổng mà server sẽ chạy, có thể dùng lệnh:
+```commandline
+python manage.py runserver 80
+```
+
+Nó đổi port server sang port 8080
+
+Vài ví dụ về port server:
+```commandline
+python manage.py runserver 8080          # nghe tại cổng 8080
+python manage.py runserver 0.0.0.0:8080  # nghe tại cổng 8080, tất cả ip
+python manage.py runserver 0:8080        # nghe tại cổng 8080, tất cả ip
+```
